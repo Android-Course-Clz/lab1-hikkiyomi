@@ -32,21 +32,28 @@ class MainActivity : AppCompatActivity() {
             ),
             Post(
                 id = 2,
-                text = "Я приостанавливаю работу телеграма в связи с созданием новой соцсети)",
+                text = "Я приостанавливаю работу телеграма в связи с созданием этой соцсети)",
                 imageUrl = "https://camo.githubusercontent.com/2f2b0c82cb9dc05f15a7b3724637a4862a98f06ad90260c6577fa873571475e6/68747470733a2f2f646f776e6c6f61642e6c6f676f2e77696e652f6c6f676f2f54656c656772616d5f28736f667477617265292f54656c656772616d5f28736f667477617265292d4c6f676f2e77696e652e706e67",
-                likeCount = 0,
+                likeCount = -100000,
                 commentCount = 999999,
             ),
             Post(
                 id = 3,
                 text = "Тест на мужчину: это круто?",
                 imageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Android_robot.svg/1745px-Android_robot.svg.png",
-                likeCount = 999999,
+                likeCount = 123123,
                 commentCount = 10,
             ),
+            Post(
+                id = 4,
+                text = "детка ты выполнила задание на 5 с плюсом",
+                imageUrl = null,
+                likeCount = 987654,
+                commentCount = 555555,
+            )
         )
 
-        val profileView = findViewById<RecyclerView>(R.id.recyclerView)
+        val profileView = findViewById<RecyclerView>(R.id.recycler_view)
         val adapter = CompositeAdapter(ProfileAdapterDelegate(), PostAdapterDelegate())
 
         profileView.layoutManager = LinearLayoutManager(this)

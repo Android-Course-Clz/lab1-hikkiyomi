@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SocialMedia</string>
+    <string name="logo">ВернулиСтену</string>
+    <string name="header_description">rectangle for header</string>
+    <string name="profile_name">Павел Дуров</string>
+    <string name="profile_info">profile info</string>
+    <string name="_4_7m">4.7M подписчиков</string>
+    <string name="photos_count">254 фотографии</string>
+    <string name="_3">3 поста</string>
+    <string name="sample_text">sample text</string>
+    <string name="like_count">0</string>
+    <string name="comments_count">0</string>
+</resources>
